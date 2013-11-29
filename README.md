@@ -11,8 +11,8 @@ mappings and a shell command which implements each conversion.
 
 Configuration is by means of a "conversion" setting, which is a list of
 conversion rules. In YAML, each list item must start with a dash-space bullet.
-Due to a problem with YAML parsing in ikiwiki, each item must take the form
-of a multiline string as shown below.
+Due to a [problem with YAML parsing in ikiwiki](http://ikiwiki.info/bugs/structured_config_data_is_mangled/),
+each item must take the form of a multiline string as shown below.
 
 The following example has three rules:
 
