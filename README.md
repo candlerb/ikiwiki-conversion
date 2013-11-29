@@ -38,19 +38,24 @@ For each conversion, the parameters are as follows:
 
 from
 :   The extension of the input file. May be a YAML or space-separated list.
+
 to
 :   The extension of the destination file to be generated
+
 match
 :   A regular expression - limits this rule to only processing files which
     match this expression
+
 command
 :   The command which copies input to output. This is safer if specified
     as a list rather than a single string (which may be subject to shell
     expansion)
+
 chdir
 :   The current working directory is changed to this value before
     executing the command. Useful if the command pulls out other files
     relative to the input file.
+
 copy_input
 :   If true, ikiwiki will also process the input file using its normal
     rules. For binary files this means copying as-is to the output site.
@@ -67,10 +72,13 @@ before passing the command to be executed, not put in environment variables.
 
 $INPUTFILE, $OUTPUTFILE
 :    The full path to the input/output file
+
 $INPUTDIR, $OUTPUTDIR
 :    The full path to the directory containing the input/output file
+
 $INPUTNAME, $OUTPUTNAME
 :    The filename (without directory but with extension)
+
 $INPUTEXT, $OUTPUTEXT
 :    Just the extension
 
